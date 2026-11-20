@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <body>
-	<iframe width="500" height="500" src="https://www.youtube.com/embed/DLzxrzFCyOs?hl=en_US&version=3&rel=0&autoplay=1" frameborder="1" allowfullscreen></iframe>
-	<h1>You thought :></h1>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vidéo Plein Écran</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* Remplit tout l'écran sans déformer (utilisez 'contain' pour voir les bords noirs) */
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline controls>
+    <source src="video/trustmp.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
+
+</body>
 </html>
